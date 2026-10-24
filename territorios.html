@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="description" content="Explore a diversidade dos territórios amazônicos, suas paisagens, comunidades e modos de vida no Norteando.">
+  <title>Territórios — Norteando</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./territorios.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topbar">
+    <nav class="wrap nav" aria-label="Navegação principal">
+      <a class="logo" href="index.html" aria-label="Norteando, página inicial"><span class="mark" aria-hidden="true">✳</span> norteando<span class="logo-dot">.</span></a>
+      <div class="navlinks">
+        <a href="index.html">Início</a>
+        <a href="acervo.html">Acervo</a>
+        <a href="territorios.html" class="active" aria-current="page">Territórios</a>
+        <a href="index.html#sobre">Sobre o projeto</a>
+      </div>
+      <a class="ai-link" href="ai.html">✦ Norteando AI ↗</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-heading"><p class="eyebrow">Amazônia plural · Territórios vivos</p><h1 id="hero-title">Muitos lugares.<br><em>Infinitas histórias.</em></h1></div>
+      <div class="hero-aside"><p>A Amazônia não é uma paisagem única. É um conjunto de rios, florestas, cidades e comunidades que constroem diferentes formas de viver e conhecer o mundo.</p><a class="text-link" href="#explorar">Começar a explorar <span aria-hidden="true">↘</span></a></div>
+    </section>
+
+    <section class="landscape" aria-label="Introdução aos territórios amazônicos">
+      <div class="landscape-art" aria-hidden="true"><span class="sun"></span><span class="ridge ridge-back"></span><span class="ridge ridge-front"></span><span class="river"></span></div>
+      <div class="wrap landscape-content"><span class="landscape-label">TERRITÓRIOS QUE CONECTAM</span><p>Onde a água encontra a floresta, a vida encontra seus caminhos.</p></div>
+    </section>
+
+    <section class="wrap intro" aria-labelledby="intro-title">
+      <div><p class="eyebrow">Muito além do mapa</p><h2 id="intro-title">Um território é também <em>memória e pertencimento.</em></h2></div>
+      <div class="intro-copy"><p>Territórios não são apenas espaços geográficos: envolvem vínculos culturais, relações com a natureza, histórias coletivas e formas de organização social.</p><p>Conheça alguns ambientes e modos de ocupação presentes na Amazônia. Este é um panorama educativo introdutório, não um mapeamento oficial de comunidades ou terras.</p></div>
+    </section>
+
+    <section class="catalog wrap" id="explorar" aria-labelledby="catalog-title">
+      <div class="section-head"><div><p class="eyebrow">Explore as paisagens</p><h2 id="catalog-title">Amazônias em perspectiva</h2></div><p>Selecione uma perspectiva para descobrir diferentes relações entre pessoas e território.</p></div>
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filtrar territórios">
+          <button type="button" class="filter active" data-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filter" data-filter="aguas" aria-pressed="false">Águas</button>
+          <button type="button" class="filter" data-filter="florestas" aria-pressed="false">Florestas</button>
+          <button type="button" class="filter" data-filter="comunidades" aria-pressed="false">Comunidades</button>
+          <button type="button" class="filter" data-filter="cidades" aria-pressed="false">Cidades</button>
+        </div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar territórios..." autocomplete="off" aria-label="Buscar territórios"></label>
+      </div>
+      <p id="results" class="results" role="status" aria-live="polite"></p>
+      <div class="territory-grid" id="territory-grid">
+        <article class="territory-card" data-category="aguas comunidades" data-search="rios ribeirinhos comunidades aguas navegacao"><div class="card-art art-rivers" aria-hidden="true"><span>≈</span></div><div class="card-content"><span class="card-category">ÁGUAS & COTIDIANO</span><h3>Territórios dos rios</h3><p>Rios e igarapés como caminhos de mobilidade, trabalho, convivência e transmissão de conhecimentos.</p><button type="button" class="card-link" data-detail="rios">Conhecer território ↗</button></div></article>
+        <article class="territory-card" data-category="florestas comunidades" data-search="florestas povos indigenas territorio saberes biodiversidade"><div class="card-art art-forest" aria-hidden="true"><span>✳</span></div><div class="card-content"><span class="card-category">FLORESTA & SABERES</span><h3>Territórios de floresta</h3><p>Relações históricas e culturais com a floresta, seus ciclos e sua diversidade de espécies.</p><button type="button" class="card-link" data-detail="florestas">Conhecer território ↗</button></div></article>
+        <article class="territory-card" data-category="aguas florestas" data-search="varzea cheia vazante inundacao ciclos aguas"><div class="card-art art-floodplain" aria-hidden="true"><span>◒</span></div><div class="card-content"><span class="card-category">CICLOS DA NATUREZA</span><h3>Várzeas e cheias</h3><p>Paisagens que se transformam com a subida e a descida das águas ao longo do ano.</p><button type="button" class="card-link" data-detail="varzeas">Conhecer território ↗</button></div></article>
+        <article class="territory-card" data-category="comunidades florestas" data-search="extrativismo reservas extrativistas castanha seringueira comunidades"><div class="card-art art-extractivism" aria-hidden="true"><span>❋</span></div><div class="card-content"><span class="card-category">TRABALHO & CONSERVAÇÃO</span><h3>Territórios extrativistas</h3><p>Formas de viver e trabalhar relacionadas ao uso de recursos da floresta e à organização comunitária.</p><button type="button" class="card-link" data-detail="extrativismo">Conhecer território ↗</button></div></article>
+        <article class="territory-card" data-category="cidades" data-search="cidades urbanas belem manaus rio branco urbanizacao"><div class="card-art art-cities" aria-hidden="true"><span>▥</span></div><div class="card-content"><span class="card-category">VIDA URBANA</span><h3>Amazônia das cidades</h3><p>Centros urbanos, bairros, mercados e espaços culturais que também fazem parte da experiência amazônica.</p><button type="button" class="card-link" data-detail="cidades">Conhecer território ↗</button></div></article>
+        <article class="territory-card" data-category="comunidades aguas" data-search="comunidades tradicionais quilombolas ribeirinhas identidades memoria"><div class="card-art art-community" aria-hidden="true"><span>✺</span></div><div class="card-content"><span class="card-category">IDENTIDADE & PERTENCIMENTO</span><h3>Comunidades e memórias</h3><p>Histórias, práticas e identidades que revelam a diversidade de comunidades amazônicas.</p><button type="button" class="card-link" data-detail="comunidades">Conhecer território ↗</button></div></article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>Nenhum território encontrado. Experimente outra busca ou filtro.</p>
+    </section>
+
+    <section class="quote-band"><div class="wrap quote-layout"><p class="eyebrow">Um convite à escuta</p><h2>Conhecer um lugar começa por reconhecer <em>quem vive nele.</em></h2><p>Territórios e conhecimentos tradicionais devem ser apresentados com contexto, fontes e respeito à autonomia das comunidades.</p></div></section>
+    <section class="wrap next-step"><div><p class="eyebrow">Continue descobrindo</p><h2>As histórias também habitam o acervo.</h2><p>Explore expressões culturais, saberes e memórias ou converse com o Norteando AI para aprofundar suas perguntas.</p></div><div class="next-actions"><a class="primary-action" href="acervo.html">Explorar acervo ↗</a><a class="secondary-action" href="ai.html">Conversar com a IA ↗</a></div></section>
+  </main>
+
+  <footer><div class="wrap foot"><span>© <span id="year"></span> Norteando · Cultura, conhecimento e Amazônia.</span><span>Protótipo educativo · Conteúdo introdutório</span></div></footer>
+
+  <dialog id="details" aria-labelledby="modal-title"><div class="modal-top"><span class="eyebrow" id="modal-category">Territórios</span><button type="button" id="close-modal" aria-label="Fechar detalhes">×</button></div><div class="modal-content"><h2 id="modal-title"></h2><p id="modal-description"></p><p class="modal-note">Conteúdo introdutório de demonstração. Não representa um cadastro oficial, delimitação territorial ou fala atribuída a uma comunidade específica.</p></div></dialog>
+  <script>
+    (() => {
+      const details = {
+        rios: ['Territórios dos rios','A presença dos rios influencia deslocamentos, alimentação, relações econômicas e vínculos sociais em muitas partes da Amazônia. Essas experiências variam entre localidades e comunidades.'],
+        florestas: ['Territórios de floresta','As florestas amazônicas abrigam diferentes ecossistemas e relações humanas com o ambiente. Povos indígenas e outras comunidades possuem histórias e conhecimentos próprios, que não devem ser tratados como uma única cultura.'],
+        varzeas: ['Várzeas e cheias','Em áreas de várzea, a dinâmica sazonal dos rios transforma paisagens e influencia práticas de moradia, circulação e produção. Os efeitos das cheias e vazantes variam conforme a região.'],
+        extrativismo: ['Territórios extrativistas','Atividades como a coleta de castanha e o manejo de outros produtos florestais integram a vida de diferentes comunidades. Reservas extrativistas são uma categoria específica de unidade de conservação e não abrangem todos os territórios onde há extrativismo.'],
+        cidades: ['Amazônia das cidades','A Amazônia também é urbana. Cidades de diferentes portes concentram mercados, universidades, manifestações artísticas e redes de circulação de pessoas, produtos e ideias.'],
+        comunidades: ['Comunidades e memórias','Povos indígenas, comunidades quilombolas, ribeirinhas e outros grupos possuem trajetórias, direitos e formas de organização distintas. O reconhecimento dessa pluralidade é fundamental para falar de território com responsabilidade.']
+      };
+      const cards = [...document.querySelectorAll('.territory-card')];
+      const filters = [...document.querySelectorAll('[data-filter]')];
+      const search = document.getElementById('search');
+      const results = document.getElementById('results');
+      const empty = document.getElementById('empty-state');
+      let currentFilter = 'todos';
+      function update() {
+        const term = search.value.trim().toLocaleLowerCase('pt-BR');
+        let count = 0;
+        cards.forEach(card => {
+          const matchesFilter = currentFilter === 'todos' || card.dataset.category.split(' ').includes(currentFilter);
+          const matchesText = !term || (card.textContent + ' ' + card.dataset.search).toLocaleLowerCase('pt-BR').includes(term);
+          card.hidden = !(matchesFilter && matchesText);
+          if (!card.hidden) count++;
+        });
+        results.textContent = `${count} ${count === 1 ? 'território encontrado' : 'territórios encontrados'}`;
+        empty.hidden = count !== 0;
+      }
+      filters.forEach(button => button.addEventListener('click', () => {
+        currentFilter = button.dataset.filter;
+        filters.forEach(item => { const selected = item === button; item.classList.toggle('active', selected); item.setAttribute('aria-pressed', String(selected)); });
+        update();
+      }));
+      search.addEventListener('input', update);
+      const dialog = document.getElementById('details');
+      document.querySelectorAll('[data-detail]').forEach(button => button.addEventListener('click', () => {
+        const [title, description] = details[button.dataset.detail];
+        document.getElementById('modal-title').textContent = title;
+        document.getElementById('modal-description').textContent = description;
+        document.getElementById('modal-category').textContent = 'Conheça o território';
+        if (typeof dialog.showModal === 'function') dialog.showModal();
+      }));
+      document.getElementById('close-modal').addEventListener('click', () => dialog.close());
+      dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+      document.getElementById('year').textContent = new Date().getFullYear();
+      update();
+    })();
+  </script>
+</body>
+</html>

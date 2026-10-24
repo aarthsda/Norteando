@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12382f">
+  <meta name="description" content="Converse com o Norteando AI e explore a cultura, a história e a biodiversidade da Amazônia com Gemma 4.">
+  <title>Norteando AI — Descubra a Amazônia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ai.css">
+  <script src="ai.js" defer></script>
+</head>
+<body class="ai-standalone">
+  <a class="skip-link" href="#ai-main">Pular para a conversa</a>
+  <div class="ai-shell">
+    <aside class="ai-sidebar" id="ai-sidebar" aria-label="Navegação e histórico">
+      <div class="ai-sidebar-heading">
+        <a class="ai-sidebar-brand" href="index.html" aria-label="Norteando, voltar ao início">✳ norteando<span class="ai-brand-suffix"> / AI</span></a>
+        <button type="button" class="icon-button" id="sidebar-toggle" aria-label="Recolher menu" aria-controls="ai-sidebar" aria-expanded="true">☰</button>
+      </div>
+      <button class="new-chat-button" id="new-chat" type="button"><span aria-hidden="true">＋</span> Nova conversa <span aria-hidden="true">↗</span></button>
+      <nav class="ai-side-nav" aria-label="Explorar Norteando">
+        <p class="sidebar-label">EXPLORAR</p>
+        <a href="index.html">⌂ <span>Página inicial</span></a>
+        <a href="acervo.html">▦ <span>Acervo cultural</span></a>
+        <a href="territorios.html">◎ <span>Territórios</span></a>
+        <a href="ai.html" aria-current="page">✳ <span>Norteando AI</span></a>
+      </nav>
+      <section class="chat-history-section" aria-labelledby="history-title">
+        <div class="ai-history-heading"><h2 class="sidebar-label" id="history-title">CONVERSAS RECENTES</h2><button type="button" class="sidebar-settings" id="clear-history" aria-label="Apagar histórico de conversas" title="Apagar histórico">⌫</button></div>
+        <div class="conversation-list" id="conversation-list"><p class="sidebar-empty">Nenhuma conversa ainda. Comece uma descoberta.</p></div>
+      </section>
+      <div class="ai-sidebar-footer">
+        <span class="model-status-dot" id="model-status-dot" aria-hidden="true"></span>
+        <span id="model-status-label" role="status">Verificando Ollama...</span>
+        <button type="button" id="ai-settings-open" class="sidebar-settings" aria-label="Configurações do modelo" title="Configurações">⚙</button>
+      </div>
+      <p class="ai-sidebar-caption">CONHECIMENTO QUE CONECTA • AMAZÔNIA</p>
+    </aside>
+
+    <main class="ai-main" id="ai-main">
+      <header class="ai-topbar">
+        <div class="ai-topbar-leading">
+          <button class="icon-button ai-mobile-menu" type="button" id="mobile-sidebar-toggle" aria-label="Abrir histórico" aria-controls="ai-sidebar" aria-expanded="false">☰</button>
+          <div><p class="ai-topbar-label">UM NOVO JEITO DE EXPLORAR</p><h1 id="ai-title">Norteando <em>AI</em></h1></div>
+        </div>
+        <div class="ai-topbar-trailing"><span class="ai-model-label" id="active-model-label">Gemma 4 · Ollama local</span><button class="ai-topbar-settings" id="ai-settings-top" type="button" aria-label="Configurar inteligência artificial">⚙</button></div>
+      </header>
+
+      <div class="ai-chat-scroll" id="ai-chat-scroll">
+        <section class="ai-welcome" id="ai-welcome" aria-labelledby="welcome-title">
+          <div class="ai-welcome-symbol" aria-hidden="true">✳</div>
+          <p class="eyebrow">A AMAZÔNIA TEM MUITO A CONTAR</p>
+          <h2 id="welcome-title">Toda descoberta<br>começa com <em>uma pergunta.</em></h2>
+          <p>Das histórias que atravessam os rios aos saberes que vivem na floresta. Explore a Amazônia com curiosidade, respeito e o apoio da inteligência artificial.</p>
+          <div class="ai-discovery-heading"><span>POR ONDE COMEÇAR</span><span>ESCOLHA UMA PERGUNTA ↘</span></div>
+          <div class="suggestion-grid">
+            <button type="button" class="suggestion-card" data-prompt="Qual é a importância dos rios para a vida e a cultura das comunidades amazônicas?"><span>01 / TERRITÓRIOS</span><strong>Por que os rios são tão importantes para a vida na Amazônia?</strong><span aria-hidden="true">↗</span></button>
+            <button type="button" class="suggestion-card" data-prompt="Como a mandioca e seus derivados fazem parte da cultura alimentar amazônica?"><span>02 / GASTRONOMIA</span><strong>Como a mandioca conecta alimentação, história e cultura?</strong><span aria-hidden="true">↗</span></button>
+            <button type="button" class="suggestion-card" data-prompt="Quais são as principais características da biodiversidade amazônica e por que ela é importante?"><span>03 / BIODIVERSIDADE</span><strong>O que torna a biodiversidade amazônica tão singular?</strong><span aria-hidden="true">↗</span></button>
+            <button type="button" class="suggestion-card" data-prompt="Quais são algumas das expressões artísticas e culturais da Amazônia brasileira, com exemplos e fontes para pesquisar?"><span>04 / CULTURA VIVA</span><strong>Quais expressões artísticas fazem parte da Amazônia?</strong><span aria-hidden="true">↗</span></button>
+          </div>
+          <p class="ai-welcome-footnote">✦ Uma ferramenta para aprender, não para substituir as vozes e os conhecimentos das comunidades.</p>
+        </section>
+        <div class="chat-messages" id="chat-messages" role="log" aria-label="Mensagens da conversa" aria-live="polite" aria-relevant="additions text"></div>
+      </div>
+
+      <div class="ai-composer-wrap">
+        <div class="ai-composer-inner">
+          <div class="ai-composer-context"><span>✳ SUA PRÓXIMA DESCOBERTA</span><span id="conversation-status" role="status">Nova conversa</span></div>
+          <form class="ai-composer" id="chat-form">
+            <label class="sr-only" for="chat-input">Digite sua pergunta para o Norteando AI</label>
+            <textarea id="chat-input" name="message" rows="2" maxlength="4000" placeholder="O que você gostaria de saber sobre a Amazônia?" required></textarea>
+            <div class="composer-actions"><span class="composer-hint">Enter envia · Shift + Enter quebra a linha</span><div><button type="button" class="stop-button" id="stop-generation" hidden>■ Parar</button><button type="submit" class="send-button" id="send-message" aria-label="Enviar mensagem">↑</button></div></div>
+          </form>
+          <p class="ai-disclaimer">Respostas geradas por IA podem conter erros. Consulte fontes confiáveis e respeite os direitos dos povos e comunidades.</p>
+          <p class="ai-error" id="ai-error" role="alert" hidden></p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <dialog class="settings-dialog" id="ai-settings" aria-labelledby="settings-title">
+    <form method="dialog" class="settings-panel">
+      <div class="settings-header"><div><p class="eyebrow">NORTEANDO AI / CONFIGURAÇÃO</p><h2 id="settings-title">Conectar ao Gemma 4</h2></div><button type="submit" class="dialog-close" aria-label="Fechar configurações">✕</button></div>
+      <p>O Norteando conversa com o modelo instalado no seu computador através da API local do Ollama. Nenhuma resposta será simulada se o modelo estiver indisponível.</p>
+      <label for="ollama-url">Endereço da API Ollama</label>
+      <input id="ollama-url" type="url" value="http://localhost:11434" autocomplete="off" spellcheck="false" required>
+      <label for="ollama-model">Nome exato do modelo instalado</label>
+      <input id="ollama-model" type="text" placeholder="Ex.: nome:tag exibido por ollama list" autocomplete="off" spellcheck="false" required>
+      <p class="settings-note">A conexão direta exige permissão CORS para a origem desta página. Não exponha o Ollama na internet sem proteção.</p>
+      <button class="button button-dark" type="button" id="save-ai-settings">Salvar e testar conexão ↗</button>
+      <p id="settings-feedback" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+  <div class="ai-mobile-backdrop" id="ai-mobile-backdrop" hidden></div>
+</body>
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12382f">
+  <meta name="description"
+    content="Norteando: descubra, explore e valorize a cultura viva da Amazônia. Histórias, territórios, saberes e inteligência artificial em um só lugar.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Norteando — A Amazônia tem muito a contar">
+  <meta property="og:description"
+    content="Uma plataforma para explorar, preservar e compartilhar a cultura viva da Amazônia.">
+  <title>Norteando — A Amazônia tem muito a contar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="site-shell" id="app">
+    <header class="site-header" id="topo">
+      <div class="header-inner container">
+        <a class="brand" href="#inicio" data-route="inicio" aria-label="Norteando, página inicial">
+          <span class="brand-symbol" aria-hidden="true">✳</span><span class="brand-wordmark">norteando<span
+              class="brand-period">.</span></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a class="nav-link is-active" href="#inicio" data-route="inicio" aria-current="page">Início</a>
+          <a class="nav-link" href="#acervo" data-route="acervo">Acervo</a>
+          <a class="nav-link" href="#territorios" data-route="territorios">Territórios</a>
+          <a class="nav-link" href="./ai.html" data-route="ia">Norteando AI</a>
+        </nav>
+        <div class="header-actions">
+          <a class="header-cta" href="#ia" data-route="ia"><span class="cta-sparkle" aria-hidden="true">✦</span>
+            Explorar com IA <span aria-hidden="true">↗</span></a>
+          <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="mobile-nav"
+            aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação móvel" hidden>
+        <a href="#inicio" data-route="inicio">Início</a><a href="#acervo" data-route="acervo">Acervo cultural</a><a
+          href="#territorios" data-route="territorios">Territórios</a><a href="#ia" data-route="ia">Norteando AI</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <!-- TELA 1: INÍCIO -->
+      <section class="page page-home is-visible" id="inicio" data-page="inicio" aria-labelledby="home-title">
+        <div class="hero">
+          <div class="hero-image" role="img" aria-label="Vista aérea de um rio atravessando a floresta amazônica"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content container">
+            <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> UM CONVITE A CONHECER</p>
+            <h1 id="home-title">A Amazônia tem<br><em>muito a contar.</em></h1>
+            <p class="hero-description">Muito além do que os olhos alcançam, existem histórias, conhecimentos e culturas
+              que seguem vivos. Um lugar para descobrir a Amazônia por suas muitas vozes.</p>
+            <div class="hero-actions"><a class="button button-light" href="#acervo" data-route="acervo">Começar a
+                explorar <span aria-hidden="true">↗</span></a><a class="text-link text-link-light" href="#territorios"
+                data-route="territorios">Conheça os territórios <span aria-hidden="true">→</span></a></div>
+          </div>
+          <div class="hero-bottom container"><span>01 / 04 — CULTURA VIVA DA AMAZÔNIA</span><span>DESCUBRA • CONHEÇA •
+              COMPARTILHE</span><span class="scroll-cue">DESLIZE PARA EXPLORAR ↓</span></div>
+        </div>
+        <section class="intro-section section-pad container" aria-labelledby="intro-title">
+          <div class="intro-kicker"><span class="section-index">01 / SOBRE O NORTEANDO</span><span
+              class="decorative-star" aria-hidden="true">✳</span></div>
+          <div class="intro-layout">
+            <h2 id="intro-title" class="display-title">Uma floresta de<br><em>conhecimentos.</em></h2>
+            <div class="intro-copy">
+              <p>A Amazônia não é uma história única. É um encontro de paisagens, comunidades, expressões culturais e
+                formas de compreender o mundo.</p>
+              <p>O Norteando nasce para aproximar pessoas desse universo, reunindo conteúdos educativos, referências e
+                ferramentas para uma descoberta respeitosa.</p><a class="inline-link" href="#acervo"
+                data-route="acervo">Conheça nosso acervo <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </section>
+        <section class="featured-section section-pad" aria-labelledby="featured-title">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">CURADORIA NORTEANDO</p>
+                <h2 id="featured-title" class="display-title">Histórias que <em>inspiram.</em></h2>
+              </div><a class="inline-link" href="#acervo" data-route="acervo">Ver todo o acervo <span
+                  aria-hidden="true">↗</span></a>
+            </div>
+            <div class="featured-grid">
+              <article class="feature-card feature-card-large"><a href="#acervo" data-route="acervo"
+                  data-open-record="rios">
+                  <div class="feature-image image-rivers" role="img" aria-label="Rio sinuoso em meio à floresta"></div>
+                  <div class="feature-content"><span class="content-tag">NATUREZA & TERRITÓRIO</span>
+                    <h3>Os rios que desenham a vida amazônica</h3>
+                    <p>Conheça a importância dos caminhos das águas para a floresta e para as populações da região.</p>
+                    <span class="card-arrow" aria-hidden="true">↗</span>
+                  </div>
+                </a></article>
+              <article class="feature-card"><a href="#acervo" data-route="acervo" data-open-record="mandioca">
+                  <div class="feature-image image-food" role="img" aria-label="Farinha e derivados da mandioca"></div>
+                  <div class="feature-content"><span class="content-tag">SABERES & SABORES</span>
+                    <h3>Mandioca: alimento, história e conhecimento</h3>
+                    <p>Um ingrediente fundamental em diversas tradições alimentares amazônicas.</p><span
+                      class="card-arrow" aria-hidden="true">↗</span>
+                  </div>
+                </a></article>
+              <article class="feature-card"><a href="#acervo" data-route="acervo" data-open-record="artesanato">
+                  <div class="feature-image image-craft" role="img"
+                    aria-label="Trançados artesanais de fibras vegetais"></div>
+                  <div class="feature-content"><span class="content-tag">ARTE & EXPRESSÃO</span>
+                    <h3>Arte que nasce das mãos e da memória</h3>
+                    <p>Trançados e técnicas que expressam diferentes histórias e identidades.</p><span
+                      class="card-arrow" aria-hidden="true">↗</span>
+                  </div>
+                </a></article>
+            </div>
+          </div>
+        </section>
+        <section class="manifesto-section">
+          <div class="container manifesto-layout">
+            <div>
+              <p class="eyebrow eyebrow-muted">CONHECIMENTO EM MOVIMENTO</p>
+              <h2 class="display-title">Preservar também é <em>compartilhar.</em></h2>
+            </div>
+            <div>
+              <p>Conhecer a Amazônia significa reconhecer a diversidade de seus povos, os direitos sobre seus
+                conhecimentos e a importância de escutar as fontes de cada história.</p><a
+                class="button button-outline-light" href="#territorios" data-route="territorios">Explore os territórios
+                <span aria-hidden="true">↗</span></a>
+            </div>
+          </div><span class="manifesto-glyph" aria-hidden="true">✳</span>
+        </section>
+        <section class="ai-teaser section-pad container">
+          <div class="ai-teaser-copy">
+            <p class="eyebrow">TECNOLOGIA PARA DESCOBRIR</p>
+            <h2 class="display-title">Sua curiosidade<br>tem <em>um novo caminho.</em></h2>
+            <p>Uma pergunta pode abrir portas para outras histórias. Converse com o Norteando AI e explore temas da
+              Amazônia com o apoio da inteligência artificial.</p><a class="button button-dark" href="#ia"
+              data-route="ia">Conversar com a IA <span aria-hidden="true">✦</span></a>
+          </div>
+          <div class="ai-teaser-panel" aria-label="Prévia da experiência Norteando AI">
+            <div class="teaser-panel-top"><span>✳ NORTEANDO AI</span><span class="status-pill">ASSISTENTE</span></div>
+            <p class="teaser-question">“Por que os rios são tão importantes para a vida na Amazônia?”</p>
+            <div class="teaser-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="teaser-bottom"><span>Explore suas perguntas</span><span>↗</span></div>
+          </div>
+        </section>
+      </section>
+
+      <!-- TELA 2: ACERVO -->
+      <section class="page page-catalog" id="acervo" data-page="acervo" aria-labelledby="catalog-title" hidden>
+        <div class="page-banner container">
+          <p class="eyebrow">02 / BIBLIOTECA CULTURAL</p>
+          <h1 id="catalog-title" class="display-title">Um universo de <em>descobertas.</em></h1>
+          <p>Explore histórias, lugares, conhecimentos e expressões culturais que revelam a diversidade da Amazônia.
+            Cada descoberta é um novo ponto de partida.</p>
+          <div class="banner-decor" aria-hidden="true">✳</div>
+        </div>
+        <div class="catalog-section container">
+          <div class="catalog-toolbar">
+            <div class="search-field"><label class="sr-only" for="catalog-search">Pesquisar no acervo</label><span
+                aria-hidden="true">⌕</span><input id="catalog-search" type="search"
+                placeholder="Pesquise temas, histórias e saberes..." autocomplete="off"><kbd>/</kbd></div>
+            <div class="catalog-meta"><span id="catalog-count" aria-live="polite">8 conteúdos</span><label
+                for="catalog-sort" class="sr-only">Ordenar resultados</label><select id="catalog-sort">
+                <option value="featured">Em destaque</option>
+                <option value="az">Título: A–Z</option>
+                <option value="za">Título: Z–A</option>
+              </select></div>
+          </div>
+          <div class="filter-bar" role="group" aria-label="Filtrar por tema"><button class="filter-chip is-active"
+              type="button" data-filter="todos" aria-pressed="true">Todos os temas</button><button class="filter-chip"
+              type="button" data-filter="natureza" aria-pressed="false">Natureza</button><button class="filter-chip"
+              type="button" data-filter="saberes" aria-pressed="false">Saberes</button><button class="filter-chip"
+              type="button" data-filter="cultura" aria-pressed="false">Cultura</button><button class="filter-chip"
+              type="button" data-filter="territorios" aria-pressed="false">Territórios</button></div>
+          <div class="catalog-grid" id="catalog-grid" aria-live="polite">
+            <article class="catalog-card" data-category="natureza territorios"
+              data-title="Os rios que desenham a vida amazônica"><button type="button" class="catalog-card-button"
+                data-open-record="rios">
+                <div class="catalog-card-image image-rivers"></div>
+                <div class="catalog-card-body"><span class="content-tag">NATUREZA & TERRITÓRIO</span>
+                  <h2>Os rios que desenham a vida amazônica</h2>
+                  <p>As águas conectam ecossistemas, deslocamentos e modos de vida.</p><span class="read-more">Explorar
+                    conteúdo ↗</span>
+                </div>
+              </button></article>
+            <article class="catalog-card" data-category="saberes cultura"
+              data-title="Mandioca: alimento, história e conhecimento"><button type="button" class="catalog-card-button"
+                data-open-record="mandioca">
+                <div class="catalog-card-image image-food"></div>
+                <div class="catalog-card-body"><span class="content-tag">SABERES & SABORES</span>
+                  <h2>Mandioca: alimento, história e conhecimento</h2>
+                  <p>Uma planta presente em práticas alimentares de diferentes comunidades.</p><span
+                    class="read-more">Explorar conteúdo ↗</span>
+                </div>
+              </button></article>
+            <article class="catalog-card" data-category="cultura saberes" data-title="Trançados, fibras e memória">
+              <button type="button" class="catalog-card-button" data-open-record="artesanato">
+                <div class="catalog-card-image image-craft"></div>
+                <div class="catalog-card-body"><span class="content-tag">ARTE & EXPRESSÃO</span>
+                  <h2>Trançados, fibras e memória</h2>
+                  <p>Os diferentes usos das fibras vegetais em produções artesanais.</p><span class="read-more">Explorar
+                    conteúdo ↗</span>
+                </div>
+              </button></article>
+            <article class="catalog-card" data-category="natureza" data-title="A floresta e sua biodiversidade"><button
+                type="button" class="catalog-card-button" data-open-record="biodiversidade">
+                <div class="catalog-card-image image-forest"></div>
+                <div class="catalog-card-body"><span class="content-tag">BIODIVERSIDADE</span>
+                  <h2>A floresta e sua biodiversidade</h2>
+                  <p>Uma introdução às relações entre espécies e ambientes amazônicos.</p><span
+                    class="read-more">Explorar conteúdo ↗</span>
+                </div>
+              </button></article>
+            <article class="catalog-card" data-category="cultura" data-title="Música e expressões populares"><button
+                type="button" class="catalog-card-button" data-open-record="musica">
+                <div class="catalog-card-image image-music"></div>
+                <div class="catalog-card-body"><span class="content-tag">CULTURA & EXPRESSÃO</span>
+                  <h2>Música e expressões populares</h2>
+                  <p>Ritmos e manifestações que atravessam a região amazônica.</p><span class="read-more">Explorar
+                    conteúdo ↗</span>
+                </div>
+              </button></article>
+            <article class="catalog-card" data-category="saberes natureza"
+              data-title="Plantas e conhecimentos botânicos"><button type="button" class="catalog-card-button"
+                data-open-record="plantas">
+                <div class="catalog-card-image image-plants"></div>
+                <div class="catalog-card-body"><span class="content-tag">SABERES & NATUREZA</span>
+                  <h2>Plantas e conhecimentos botânicos</h2>
+                  <p>Conhecer a flora também é compreender diferentes formas de pesquisa.</p><span
+                    class="read-more">Explorar conteúdo ↗</span>
+                </div>
+              </button></article>
+            <article class="catalog-card" data-category="territorios" data-title="Comunidades e caminhos das águas">
+              <button type="button" class="catalog-card-button" data-open-record="comunidades">
+                <div class="catalog-card-image image-community"></div>
+                <div class="catalog-card-body"><span class="content-tag">VIDA & TERRITÓRIO</span>
+                  <h2>Comunidades e caminhos das águas</h2>
+                  <p>As relações entre deslocamento, paisagem e vida cotidiana.</p><span class="read-more">Explorar
+                    conteúdo ↗</span>
+                </div>
+              </button></article>
+            <article class="catalog-card" data-category="cultura territorios"
+              data-title="A diversidade de línguas amazônicas"><button type="button" class="catalog-card-button"
+                data-open-record="linguas">
+                <div class="catalog-card-image image-language"></div>
+                <div class="catalog-card-body"><span class="content-tag">LÍNGUAS & MEMÓRIA</span>
+                  <h2>A diversidade de línguas amazônicas</h2>
+                  <p>As línguas como parte essencial da memória e da diversidade cultural.</p><span
+                    class="read-more">Explorar conteúdo ↗</span>
+                </div>
+              </button></article>
+          </div>
+          <div class="empty-state" id="catalog-empty" hidden><span aria-hidden="true">⌕</span>
+            <h2>Nenhum resultado encontrado</h2>
+            <p>Experimente outra palavra-chave ou escolha um tema diferente.</p><button class="button button-dark"
+              type="button" id="clear-filters">Limpar filtros</button>
+          </div>
+        </div>
+        <section class="catalog-bottom-cta">
+          <div class="container">
+            <p class="eyebrow">CONTINUE A DESCOBERTA</p>
+            <h2>Ficou com alguma pergunta?</h2>
+            <p>Leve sua curiosidade ao Norteando AI e continue explorando.</p><a href="#ia" data-route="ia"
+              class="button button-light">Perguntar à IA ↗</a>
+          </div>
+        </section>
+      </section>
+
+      <!-- TELA 3: TERRITÓRIOS -->
+      <section class="page page-territories" id="territorios" data-page="territorios"
+        aria-labelledby="territories-title" hidden>
+        <div class="territory-hero">
+          <div class="territory-hero-image" role="img" aria-label="Paisagem fluvial amazônica"></div>
+          <div class="territory-hero-shade"></div>
+          <div class="container territory-hero-content">
+            <p class="eyebrow">03 / TERRITÓRIOS E IDENTIDADES</p>
+            <h1 id="territories-title">Muitos lugares.<br><em>Incontáveis histórias.</em></h1>
+            <p>Conheça diferentes paisagens, contextos e expressões culturais da Amazônia brasileira. Um território
+              plural, que não cabe em uma única narrativa.</p>
+          </div>
+        </div>
+        <section class="territory-intro container section-pad">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">GEOGRAFIAS DA CULTURA</p>
+              <h2 class="display-title">Amazônias <em>plurais.</em></h2>
+            </div>
+            <p>De cidades a comunidades ribeirinhas, de florestas a rios, cada lugar apresenta relações próprias entre
+              ambiente, memória e cotidiano.</p>
+          </div>
+          <div class="territory-cards">
+            <article class="territory-card">
+              <div class="territory-card-image image-acre"></div>
+              <div class="territory-card-body"><span class="territory-number">01 / NORTE DO BRASIL</span>
+                <h3>Acre</h3>
+                <p>Florestas, rios, cidades e uma rica diversidade de trajetórias sociais e culturais no extremo oeste
+                  brasileiro.</p>
+                <div class="territory-tags"><span>Rio Branco</span><span>Alto Acre</span><span>Juruá</span></div><button
+                  type="button" class="inline-link territory-explore" data-territory="acre">Conhecer o território
+                  ↗</button>
+              </div>
+            </article>
+            <article class="territory-card">
+              <div class="territory-card-image image-amazonas"></div>
+              <div class="territory-card-body"><span class="territory-number">02 / NORTE DO BRASIL</span>
+                <h3>Amazonas</h3>
+                <p>Um estado marcado por grandes redes fluviais, centros urbanos e múltiplas formas de viver e produzir
+                  cultura.</p>
+                <div class="territory-tags"><span>Manaus</span><span>Rio Negro</span><span>Solimões</span></div><button
+                  type="button" class="inline-link territory-explore" data-territory="amazonas">Conhecer o território
+                  ↗</button>
+              </div>
+            </article>
+            <article class="territory-card">
+              <div class="territory-card-image image-para"></div>
+              <div class="territory-card-body"><span class="territory-number">03 / NORTE DO BRASIL</span>
+                <h3>Pará</h3>
+                <p>Encontros entre rios, cidades, ilhas e tradições culturais que integram a diversidade amazônica.</p>
+                <div class="territory-tags"><span>Belém</span><span>Marajó</span><span>Tapajós</span></div><button
+                  type="button" class="inline-link territory-explore" data-territory="para">Conhecer o território
+                  ↗</button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="territory-perspective">
+          <div class="container perspective-layout">
+            <div>
+              <p class="eyebrow eyebrow-muted">ALÉM DO MAPA</p>
+              <h2 class="display-title">Um território é também <em>memória.</em></h2>
+            </div>
+            <div>
+              <p>Territórios não são apenas limites geográficos. São espaços de pertencimento, convivência e
+                transformação, cujas histórias devem ser contadas com contexto e respeito por quem as vive.</p>
+              <p>O Norteando apresenta materiais introdutórios e incentiva a consulta às instituições, aos pesquisadores
+                e às próprias organizações comunitárias que publicam seus conhecimentos.</p>
+            </div>
+          </div>
+        </section>
+        <section class="container section-pad territory-discover">
+          <p class="eyebrow">APROFUNDE SEU OLHAR</p>
+          <h2 class="display-title">Conhecimento para <em>ir além.</em></h2>
+          <div class="discovery-links"><a href="#acervo" data-route="acervo"><span>01</span><strong>Explore os saberes e
+                as culturas</strong><span aria-hidden="true">↗</span></a><a href="#acervo"
+              data-route="acervo"><span>02</span><strong>Descubra os ecossistemas amazônicos</strong><span
+                aria-hidden="true">↗</span></a><a href="#ia" data-route="ia"><span>03</span><strong>Faça uma pergunta ao
+                Norteando AI</strong><span aria-hidden="true">↗</span></a></div>
+        </section>
+      </section>
+
+      <!-- TELA 4: NORTEANDO AI -->
+      <section class="page page-ai" id="ia" data-page="ia" aria-labelledby="ai-title" hidden>
+        <div class="ai-layout">
+          <aside class="ai-sidebar" aria-label="Histórico de conversas">
+            <div class="ai-sidebar-heading"><span class="ai-sidebar-brand">✳ Norteando AI</span><button type="button"
+                class="icon-button" id="sidebar-toggle" aria-label="Recolher histórico">☰</button></div><button
+              class="new-chat-button" id="new-chat" type="button"><span aria-hidden="true">＋</span> Nova
+              conversa</button>
+            <div class="chat-history-section">
+              <p class="sidebar-label">SUAS CONVERSAS</p>
+              <div class="conversation-list" id="conversation-list">
+                <p class="sidebar-empty">Suas conversas aparecerão aqui.</p>
+              </div>
+            </div>
+            <div class="ai-sidebar-footer"><span class="model-status-dot" id="model-status-dot"></span><span
+                id="model-status-label">Verificando Ollama...</span><button type="button" id="ai-settings-open"
+                class="sidebar-settings" aria-label="Configurações do modelo">⚙</button></div>
+          </aside>
+          <div class="ai-main">
+            <div class="ai-topbar">
+              <div>
+                <p class="ai-topbar-label">ASSISTENTE DE DESCOBERTA</p>
+                <h1 id="ai-title">Norteando <em>AI</em></h1>
+              </div><span class="ai-model-label" id="active-model-label">Gemma 4 • Ollama local</span>
+            </div>
+            <div class="ai-chat-scroll" id="ai-chat-scroll">
+              <div class="ai-welcome" id="ai-welcome">
+                <div class="ai-welcome-symbol" aria-hidden="true">✳</div>
+                <p class="eyebrow">BEM-VINDO AO NORTEANDO AI</p>
+                <h2>O que você gostaria<br>de <em>descobrir hoje?</em></h2>
+                <p>Explore perguntas sobre natureza, história e cultura amazônica. A IA pode ajudar a aprender, mas suas
+                  respostas devem ser conferidas em fontes confiáveis.</p>
+                <div class="suggestion-grid"><button type="button" class="suggestion-card"
+                    data-prompt="Qual é a importância dos rios para as comunidades amazônicas?"><span>01 /
+                      TERRITÓRIOS</span><strong>Qual é a importância dos rios para as comunidades
+                      amazônicas?</strong><span aria-hidden="true">↗</span></button><button type="button"
+                    class="suggestion-card"
+                    data-prompt="Como a mandioca está presente na alimentação amazônica?"><span>02 /
+                      SABERES</span><strong>Como a mandioca está presente na alimentação amazônica?</strong><span
+                      aria-hidden="true">↗</span></button><button type="button" class="suggestion-card"
+                    data-prompt="O que torna a biodiversidade amazônica tão importante?"><span>03 /
+                      NATUREZA</span><strong>O que torna a biodiversidade amazônica tão importante?</strong><span
+                      aria-hidden="true">↗</span></button><button type="button" class="suggestion-card"
+                    data-prompt="Quais são algumas das expressões culturais da região amazônica?"><span>04 /
+                      CULTURA</span><strong>Quais são algumas das expressões culturais da região
+                      amazônica?</strong><span aria-hidden="true">↗</span></button></div>
+              </div>
+              <div class="chat-messages" id="chat-messages" role="log" aria-label="Mensagens da conversa"
+                aria-live="polite" aria-relevant="additions text"></div>
+            </div>
+            <div class="ai-composer-wrap">
+              <form class="ai-composer" id="chat-form"><label class="sr-only" for="chat-input">Sua mensagem para o
+                  Norteando AI</label><textarea id="chat-input" name="message" rows="2" maxlength="4000"
+                  placeholder="Pergunte algo sobre a Amazônia..." required></textarea>
+                <div class="composer-actions"><span class="composer-hint">Enter para enviar • Shift + Enter para nova
+                    linha</span>
+                  <div><button type="button" class="stop-button" id="stop-generation" hidden>Parar
+                      resposta</button><button type="submit" class="send-button" id="send-message"
+                      aria-label="Enviar mensagem">↑</button></div>
+                </div>
+              </form>
+              <p class="ai-disclaimer">O Norteando AI utiliza Gemma 4 via Ollama local. Respostas podem conter
+                imprecisões; verifique informações importantes.</p>
+              <p id="ai-error" class="ai-error" role="alert" hidden></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="rodape">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-about"><a href="#inicio" data-route="inicio" class="footer-brand"><span
+                aria-hidden="true">✳</span> norteando.</a>
+            <p>Uma plataforma digital para explorar, preservar e compartilhar a cultura viva da Amazônia.</p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <h2>EXPLORE</h2><a href="#inicio" data-route="inicio">Início</a><a href="#acervo"
+                data-route="acervo">Acervo cultural</a><a href="#territorios" data-route="territorios">Territórios</a>
+            </div>
+            <div>
+              <h2>DESCUBRA</h2><a href="#ia" data-route="ia">Norteando AI</a><a href="#acervo"
+                data-route="acervo">Saberes da Amazônia</a><a href="#territorios" data-route="territorios">Lugares e
+                culturas</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="current-year">2026</span> Norteando. Feito para descobrir e
+            valorizar.</span><span>AMAZÔNIA • BRASIL</span><a href="#topo">Voltar ao topo ↑</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- DIÁLOGO DE DETALHES DO ACERVO -->
+  <dialog class="content-dialog" id="record-dialog" aria-labelledby="record-dialog-title">
+    <div class="dialog-inner"><button class="dialog-close" id="record-dialog-close" type="button"
+        aria-label="Fechar detalhes">✕</button>
+      <div class="dialog-hero" id="record-dialog-image"></div>
+      <div class="dialog-content">
+        <p class="eyebrow" id="record-dialog-category">ACERVO NORTEANDO</p>
+        <h2 id="record-dialog-title"></h2>
+        <p class="dialog-lead" id="record-dialog-lead"></p>
+        <div class="dialog-article" id="record-dialog-article"></div>
+        <div class="dialog-sources">
+          <h3>Fontes e referências</h3>
+          <div id="record-dialog-sources"></div>
+        </div><button class="button button-dark" id="ask-about-record" type="button">Perguntar ao Norteando AI
+          ↗</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- DIÁLOGO DE TERRITÓRIOS -->
+  <dialog class="territory-dialog" id="territory-dialog" aria-labelledby="territory-dialog-title">
+    <div class="dialog-inner"><button class="dialog-close" id="territory-dialog-close" type="button"
+        aria-label="Fechar detalhes">✕</button>
+      <div class="dialog-content">
+        <p class="eyebrow">TERRITÓRIOS DA AMAZÔNIA</p>
+        <h2 id="territory-dialog-title"></h2>
+        <div id="territory-dialog-content"></div><a href="#acervo" data-route="acervo"
+          class="button button-dark">Explorar conteúdos relacionados ↗</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- CONFIGURAÇÕES DA IA -->
+  <dialog class="settings-dialog" id="ai-settings" aria-labelledby="settings-title">
+    <form method="dialog" class="settings-panel">
+      <div class="settings-header">
+        <div>
+          <p class="eyebrow">NORTEANDO AI</p>
+          <h2 id="settings-title">Configurações</h2>
+        </div><button type="submit" class="dialog-close" aria-label="Fechar configurações">✕</button>
+      </div>
+      <p>Conecte o navegador à sua instalação local do Ollama. O modelo precisa estar instalado e acessível.</p><label
+        for="ollama-url">Endereço do Ollama</label><input id="ollama-url" type="url" value="http://localhost:11434"
+        spellcheck="false"><label for="ollama-model">Identificador do modelo instalado</label><input id="ollama-model"
+        type="text" placeholder="Digite o nome exato do modelo" spellcheck="false">
+      <p class="settings-note">O navegador precisa de permissão CORS para acessar o Ollama. Nunca exponha uma instância
+        local diretamente à internet.</p><button class="button button-dark" type="button" id="save-ai-settings">Salvar e
+        verificar conexão</button>
+      <p id="settings-feedback" role="status"></p>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <noscript>
+    <div class="noscript-notice">Ative o JavaScript para usar a navegação, os filtros e o Norteando AI.</div>
+  </noscript>
+</body>
+
+</html>
