@@ -3,8 +3,6 @@
 > **Cultura viva da Amazônia.**
 > *Conectar pessoas. Preservar raízes. Uma Amazônia, muitas histórias.*
 
-🔗 **Demo:** https://norteando-cultura-christian.divinetuna16.chatgpt.site
-
 ---
 
 ## 💡 Sobre o projeto
@@ -40,6 +38,7 @@ Uma plataforma colaborativa em que a própria comunidade ajuda a construir e pre
 - Turistas e visitantes que querem conhecer a região de forma autêntica
 - Estudantes, professores e pesquisadores
 - Artistas, mestres da cultura popular e comunidades tradicionais
+- E qualquer pessoa que seja curiosa vontade de conhecer suas raizes
 
 ## 🌱 Impacto esperado
 
